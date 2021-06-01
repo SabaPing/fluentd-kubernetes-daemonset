@@ -3,7 +3,7 @@
 
 FROM fluent/fluentd:v1.12.4-debian-1.0
 
-LABEL maintainer="Eduardo Silva <eduardo@treasure-data.com>"
+LABEL maintainer="Yifan Xu <xuyifan02@pingcap.com>"
 USER root
 WORKDIR /home/fluent
 ENV PATH /fluentd/vendor/bundle/ruby/2.6.0/bin:$PATH
@@ -13,7 +13,7 @@ ENV GEM_HOME /fluentd/vendor/bundle/ruby/2.6.0
 ENV FLUENTD_DISABLE_BUNDLER_INJECTION 1
 
 COPY Gemfile* /fluentd/
-RUN buildDeps="sudo make gcc g++ libc-dev libffi-dev" \
+RUN buildDeps="sudo make gcc g++ libc-dev libffi-dev default-libmysqlclient-dev" \
   runtimeDeps="" \
       && apt-get update \
      && apt-get upgrade -y \
