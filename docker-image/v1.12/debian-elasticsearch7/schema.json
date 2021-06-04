@@ -1,0 +1,209 @@
+{
+  "@timestamp": {
+    "type": "date",
+    "format": "strict_date_optional_time"
+  },
+  "Backoff_time": {
+    "type": "float"
+  },
+  "Backoff_total": {
+    "type": "long"
+  },
+  "Commit_time": {
+    "type": "float"
+  },
+  "Compile_time": {
+    "type": "float"
+  },
+  "Conn_ID": {
+    "type": "long"
+  },
+  "Cop_backoff_regionMiss_total_time": {
+    "type": "float"
+  },
+  "Cop_backoff_regionMiss_total_times": {
+    "type": "long"
+  },
+  "Cop_backoff_tikvRPC_total_time": {
+    "type": "float"
+  },
+  "Cop_backoff_tikvRPC_total_times": {
+    "type": "long"
+  },
+  "Cop_proc_addr": {
+    "type": "keyword"
+  },
+  "Cop_proc_avg": {
+    "type": "long"
+  },
+  "Cop_proc_max": {
+    "type": "long"
+  },
+  "Cop_proc_p90": {
+    "type": "long"
+  },
+  "Cop_time": {
+    "type": "float"
+  },
+  "Cop_wait_addr": {
+    "type": "keyword"
+  },
+  "Cop_wait_avg": {
+    "type": "long"
+  },
+  "Cop_wait_max": {
+    "type": "long"
+  },
+  "Cop_wait_p90": {
+    "type": "long"
+  },
+  "DB": {
+    "type": "keyword"
+  },
+  "Digest": {
+    "type": "keyword"
+  },
+  "Get_commit_ts_time": {
+    "type": "float"
+  },
+  "Has_more_results": {
+    "type": "keyword"
+  },
+  "Index_names": {
+    "type": "keyword"
+  },
+  "Is_internal": {
+    "type": "keyword"
+  },
+  "KV_total": {
+    "type": "float"
+  },
+  "Mem_max": {
+    "type": "long"
+  },
+  "Num_cop_tasks": {
+    "type": "long"
+  },
+  "Optimize_time": {
+    "type": "float"
+  },
+  "PD_total": {
+    "type": "float"
+  },
+  "Parse_time": {
+    "type": "long"
+  },
+  "Plan": {
+    "type": "keyword"
+  },
+  "Plan_digest": {
+    "type": "keyword"
+  },
+  "Plan_from_binding": {
+    "type": "keyword"
+  },
+  "Plan_from_cache": {
+    "type": "keyword"
+  },
+  "Prepared": {
+    "type": "keyword"
+  },
+  "Prev_stmt": {
+    "type": "keyword"
+  },
+  "Prewrite_region": {
+    "type": "long"
+  },
+  "Prewrite_time": {
+    "type": "float"
+  },
+  "Process_keys": {
+    "type": "long"
+  },
+  "Process_time": {
+    "type": "float"
+  },
+  "Query_time": {
+    "type": "float"
+  },
+  "Request_count": {
+    "type": "long"
+  },
+  "Rewrite_time": {
+    "type": "float"
+  },
+  "Rocksdb_block_cache_hit_count": {
+    "type": "long"
+  },
+  "Rocksdb_delete_skipped_count": {
+    "type": "long"
+  },
+  "Rocksdb_key_skipped_count": {
+    "type": "long"
+  },
+  "Statement": {
+    "type": "keyword"
+  },
+  "Stats": {
+    "type": "keyword"
+  },
+  "Succ": {
+    "type": "keyword"
+  },
+  "Time": {
+    "type": "date",
+    "format": "strict_date_optional_time"
+  },
+  "Total_keys": {
+    "type": "long"
+  },
+  "Txn_start_ts": {
+    "type": "long"
+  },
+  "User": {
+    "type": "keyword"
+  },
+  "Wait_TS": {
+    "type": "float"
+  },
+  "Wait_time": {
+    "type": "float"
+  },
+  "Write_keys": {
+    "type": "long"
+  },
+  "Write_size": {
+    "type": "long"
+  },
+  "Write_sql_response_total": {
+    "type": "long"
+  },
+  "kubernetes": {
+    "properties": {
+      "container_hash": {
+        "type": "keyword"
+      },
+      "container_image": {
+        "type": "keyword"
+      },
+      "container_name": {
+        "type": "keyword"
+      },
+      "docker_id": {
+        "type": "keyword"
+      },
+      "host": {
+        "type": "keyword"
+      },
+      "namespace_name": {
+        "type": "keyword"
+      },
+      "pod_id": {
+        "type": "keyword"
+      },
+      "pod_name": {
+        "type": "keyword"
+      }
+    }
+  }
+}
